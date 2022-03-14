@@ -14,6 +14,12 @@ public class BasicCalculator {
         return number1 + number2;
     }
 
+    //METHOD: SUBTRACT
+    public Long subtract(Long number1, Long number2) {
+        logger.info("subtracting {} - {}", number1, number2);
+        return number1 - number2;
+    }
+
     //Todo:finish the others methods
 
 

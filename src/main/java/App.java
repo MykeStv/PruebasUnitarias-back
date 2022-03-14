@@ -29,5 +29,9 @@ public class App {
 
         System.out.println(number1 + " + " + number2 + " = " + result);
 
+        //Method of subtraction
+        Long resultSubtraction = calculator.subtract(number1, number2);
+        System.out.println(number1 + " - " + number2 + " = " + resultSubtraction);
+
     }
 }

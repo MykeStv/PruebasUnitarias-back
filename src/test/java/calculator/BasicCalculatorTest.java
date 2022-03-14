@@ -25,7 +25,7 @@ class BasicCalculatorTest {
         Assertions.assertEquals(expectedValue, result);
     }
 
-    
+
     @DisplayName("Testing several sums")
     @ParameterizedTest(name = "{0} + {1} = {2}")
     @CsvSource({
@@ -39,4 +39,33 @@ class BasicCalculatorTest {
                 () -> first +" + "+ second +" should equal "+ expectedResult);
     }
 
+    //TEST FOR SUBTRACTING
+    @Test
+    @DisplayName("Testing substract: 7-2 = 5")
+    public void subtract() {
+        //ARRANGE
+        Long number1 = 7L;
+        Long number2 = 2L;
+        Long expectedValue = 5L;
+
+        //ACT
+        Long result = basicCalculator.subtract(number1, number2);
+
+        //ASSERT
+        Assertions.assertEquals(expectedValue, result);
+    }
+
+    @DisplayName("Testing several subtractions")
+    @ParameterizedTest(name = "{3} - {1} = {2}")
+    @CsvSource({
+            "3,    1,   2",
+            "5,    2,   3",
+            "49,  15, 34",
+            "100,  55, 45"
+    })
+    public void severalSubtractions(Long first, Long second, long expectedResult) {
+        Assertions.assertEquals(expectedResult, basicCalculator.subtract(first, second),
+                () -> first +" - "+ second +" should equal "+ expectedResult);
+    }
+    
 }
