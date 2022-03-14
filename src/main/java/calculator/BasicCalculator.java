@@ -14,10 +14,16 @@ public class BasicCalculator {
         return number1 + number2;
     }
 
-    //METHOD: SUBTRACT
+    //METHOD: SUBTRACTION
     public Long subtract(Long number1, Long number2) {
         logger.info("subtracting {} - {}", number1, number2);
         return number1 - number2;
+    }
+
+    //METHOD: MULTIPLICATION
+    public Long multiply(Long number1, Long number2) {
+        logger.info("multiplication {} * {}", number1, number2);
+        return number1 * number2;
     }
 
     //Todo:finish the others methods

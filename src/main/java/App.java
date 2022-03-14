@@ -33,5 +33,9 @@ public class App {
         Long resultSubtraction = calculator.subtract(number1, number2);
         System.out.println(number1 + " - " + number2 + " = " + resultSubtraction);
 
+        //Method of multiplication
+        Long resultMultiply = calculator.multiply(number1, number2);
+        System.out.println(number1 + " * " + number2 + " = " + resultMultiply);
+
     }
 }
