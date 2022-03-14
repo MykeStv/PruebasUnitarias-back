@@ -1,4 +1,4 @@
-import calculator.BasciCalculator;
+import calculator.BasicCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +24,7 @@ public class App {
         Long number2 = Long.valueOf(stringNumber2);
 
         //Call the methods
-        BasciCalculator calculator = new BasciCalculator();
+        BasicCalculator calculator = new BasicCalculator();
         Long result = calculator.sum(number1, number2);
 
         System.out.println(number1 + " + " + number2 + " = " + result);

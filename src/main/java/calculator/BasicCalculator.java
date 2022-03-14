@@ -4,9 +4,9 @@ package calculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BasciCalculator {
+public class BasicCalculator {
 
-    private static final Logger logger = LoggerFactory.getLogger(BasciCalculator.class);
+    private static final Logger logger = LoggerFactory.getLogger(BasicCalculator.class);
 
     //METHOD: SUM
     public Long sum(Long number1, Long number2) {
