@@ -37,5 +37,14 @@ public class App {
         Long resultMultiply = calculator.multiply(number1, number2);
         System.out.println(number1 + " * " + number2 + " = " + resultMultiply);
 
+        //Method of multiplication
+        if (number2 == 0) {
+            //throw new IllegalArgumentException("no se puede dividir por 0");
+            System.out.println("Division: Can't divide by 0");
+        } else {
+            Long resultDivision = calculator.division(number1, number2);
+            System.out.println(number1 + " / " + number2 + " = " + resultDivision);
+        }
+
     }
 }

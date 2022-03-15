@@ -26,7 +26,10 @@ public class BasicCalculator {
         return number1 * number2;
     }
 
-    //Todo:finish the others methods
-
+    //METHOD: DIVISION
+    public Long division(Long number1, Long number2) {
+        logger.info("division {} / {}", number1, number2);
+        return number1 / number2;
+    }
 
 }

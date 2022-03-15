@@ -96,4 +96,33 @@ class BasicCalculatorTest {
         Assertions.assertEquals(expectedResult, basicCalculator.multiply(first, second),
                 () -> first +" * "+ second +" should equal "+ expectedResult);
     }
+
+    //TEST FOR DIVISION
+    @Test
+    @DisplayName("Testing division: 15 / 3 = 5")
+    public void division() {
+        //ARRANGE
+        Long number1 = 15L;
+        Long number2 = 3L;
+        Long expectedValue = 5L;
+
+        //ACT
+        Long result = basicCalculator.division(number1, number2);
+
+        //ASSERT
+        Assertions.assertEquals(expectedValue, result);
+    }
+
+    @DisplayName("Testing several divisions")
+    @ParameterizedTest(name = "{3} / {1} = {3}")
+    @CsvSource({
+            "3,    1,   3",
+            "5,    2,   2",
+            "45,  5, 9",
+            "72,  3, 24"
+    })
+    public void severalDivisions(Long first, Long second, long expectedResult) {
+        Assertions.assertEquals(expectedResult, basicCalculator.division(first, second),
+                () -> first +" / "+ second +" should equal "+ expectedResult);
+    }
 }
