@@ -56,7 +56,7 @@ class BasicCalculatorTest {
     }
 
     @DisplayName("Testing several subtractions")
-    @ParameterizedTest(name = "{3} - {1} = {2}")
+    @ParameterizedTest(name = "{0} - {1} = {2}")
     @CsvSource({
             "3,    1,   2",
             "5,    2,   3",
@@ -85,7 +85,7 @@ class BasicCalculatorTest {
     }
 
     @DisplayName("Testing several multiplications")
-    @ParameterizedTest(name = "{3} * {1} = {3}")
+    @ParameterizedTest(name = "{0} * {1} = {2}")
     @CsvSource({
             "3,    1,   3",
             "5,    2,   10",
@@ -114,7 +114,7 @@ class BasicCalculatorTest {
     }
 
     @DisplayName("Testing several divisions")
-    @ParameterizedTest(name = "{3} / {1} = {3}")
+    @ParameterizedTest(name = "{0} / {1} = {2}")
     @CsvSource({
             "3,    1,   3",
             "5,    2,   2",
